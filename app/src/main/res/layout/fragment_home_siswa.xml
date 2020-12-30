@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Dashboard"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbarHomeS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/headTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal"
+        android:background="@color/putih_abu"
+        android:textColor="@color/hitam"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        />
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHomeS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

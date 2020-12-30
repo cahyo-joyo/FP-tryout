@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardJadwalS"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/headTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 Juni 2020"
+        android:visibility="gone"
+        android:background="@color/putih_abu"
+        android:textColor="@color/hitam"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="10dp"
+        />
+    <androidx.cardview.widget.CardView
+        app:cardElevation="3dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mapelJadwalS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Matematika"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@+id/mapelJadwalS"
+        android:id="@+id/kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Kelas"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/kelasJadwalS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XII - IPA 5"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/waktu"
+            android:layout_below="@+id/kelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/tanggalJadwalS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="30 Juli 2020"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/jamJadwalS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12.00 PM"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/waktu"
+            android:id="@+id/durasiJadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durasi : 60 Menit"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray" />
+
+
+        <TextView
+            android:id="@+id/btn_mengerjakan"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai Mengerjakan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/putih"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/box_biru"/>
+
+        <TextView
+            android:id="@+id/status_sudah"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selesai"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorGray"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/box_putih_abu"/>
+
+        <TextView
+            android:id="@+id/status_akan_dimulai"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dimulai Hari Ini"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/putih"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/box_hijau"/>
+        <TextView
+            android:id="@+id/status_berlalu"
+            android:visibility="gone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ujian Berlalu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/putih"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/box_merah"/>
+        <TextView
+            android:id="@+id/sisaWaktu"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/waktu"
+            android:textColor="@color/colorAccent"
+            android:text="Sisa : 10 Menit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

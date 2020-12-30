@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B7FF</color>
+    <color name="colorPrimaryDark">#00B7FF</color>
+    <color name="colorAccent">#EA6036</color>
+    <color name="hitam">#000</color>
+    <color name="putih">#fff</color>
+    <color name="kuning">#ffb300</color>
+    <color name="ijo_dashboard">#0abb86</color>
+    <color name="merah_dashboard">#ea4141</color>
+    <color name="kuning_dasboard">#ff9e36</color>
+    <color name="putih_abu">#f6f6f6</color>
+    <color name="colorGray">#5b5b5b</color>
+</resources>

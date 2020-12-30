@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/BgbarSoalS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            app:title="Tryout"
+            app:titleTextColor="@android:color/white"
+            android:id="@+id/toolbarSoalS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/timerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="00 : 00 : 00"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/petunjukSoalS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@id/BgbarSoalS"
+        android:text="Kerjakan soal ujian berikut dengan benar dan jujur"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSoalS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/petunjukSoalS"
+        android:layout_above="@id/finishSoalS"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/finishSoalS"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_finish"
+            android:backgroundTint="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

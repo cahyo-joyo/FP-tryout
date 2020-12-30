@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".ActivityLogin">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Sign in"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/textUser"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorGray"
+                android:paddingLeft="60dp"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/text_username"/>
+
+            <EditText
+                android:id="@+id/textPass"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorGray"
+                android:paddingLeft="60dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/text_password" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="Forgot password?"
+            android:textColor="@color/colorGray" />
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/btn_signin"
+            android:text="Sign in"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
